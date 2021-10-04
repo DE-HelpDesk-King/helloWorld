@@ -2,6 +2,8 @@
 **/.terraform/*
 
 # .tfstate files
+terraform.state
+terraform.state.backup
 *.tfstate
 *.tfstate.*
 
@@ -16,6 +18,10 @@ crash.log
 
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
+prod.tf
+variables.tf
+main.tf
+outputs.tf
 override.tf
 override.tf.json
 *_override.tf
